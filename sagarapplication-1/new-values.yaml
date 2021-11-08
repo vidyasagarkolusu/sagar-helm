@@ -1,0 +1,22 @@
+# Default values for sagarapplication-1.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deployment:
+  replicaCount: 2
+  name: mynew-deployment
+  image:
+    app: nginx
+    version: latest
+service:
+  name: mynew-service
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 32046
+
+
+
+
+
+
